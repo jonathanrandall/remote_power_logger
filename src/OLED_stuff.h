@@ -4,6 +4,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <Fonts/FreeSans9pt7b.h>
+#include "wifi_stuff.h"
 
 #define SCREEN_WIDTH 128 //128 // OLED width,  in pixels
 #define SCREEN_HEIGHT 64 // OLED height, in pixels
@@ -48,9 +49,9 @@ void displaydata() {
   oled.setCursor(65, 37);
   oled.println("mW");
   oled.setCursor(0, 57);
-  oled.println(energy);
-  oled.setCursor(65, 57);
-  oled.println("mWh");
+  oled.println(WiFi.localIP());
+  // oled.setCursor(65, 57);
+  // oled.println("mWh");
   oled.display();
 }
 

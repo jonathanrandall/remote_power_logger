@@ -62,7 +62,7 @@ void setup()
 
   oled.println(WiFi.localIP());
   oled.display();
-  delay(3000);
+  delay(2000);
   /// end oled stuff
 
   f_out = String("/") + String("Res_") + get_date_string() + ".csv";
