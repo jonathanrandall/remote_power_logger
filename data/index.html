@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ESP IOT DASHBOARD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Untitled.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <h1>ESP WEB SERVER CHARTS</h1>
+    </div>
+    <a href="data_file">get results</a><br />
+    <div class="content">
+        <div class="card-grid">
+            <div class="card">
+                <p class="card-title">Volatage Chart (V)</p>
+                <div id="chart-voltage" class="chart-container"></div>
+            </div>
+            <div class="card">
+                <p class="card-title">Current Chart (mA)</p>
+                <div id="chart-current" class="chart-container"></div>
+            </div>
+            
+        </div>
+    </div>
+    <br/>
+    <p id = "ResultsFile">here is the results file</p>
+    <script src="script.js"></script>
+</body>
+
+</html>
