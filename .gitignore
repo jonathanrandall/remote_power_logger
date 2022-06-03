@@ -1,3 +1,6 @@
 ssid*
 .pio
 .pio/*
+.pio*
+.pio\*
+.pio\build\*
